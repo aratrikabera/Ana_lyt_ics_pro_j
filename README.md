@@ -1,2 +1,18 @@
 # Ana_lyt_ics_pro_j
 These are some of the projects on analytics-regression models, text mining, ML algos etc that I am working on. The starters are pretty east and anyone who is starting out will find them helpful in description. It may also happen that some of my initial models are not as accurate as they should have been-but with future revisions, I am improving upon them as well.
+
+So this is my very first regression-modelling project. To most seasoned eyes-this will be the rookie project with not much steam. But I beg to differ in that opinion-since every one needs to start from somewhere-and every first project is the best one they have experienced.
+
+I have implemented Linear Regression as well as multiple-explanatory-variables regression on a data-set which was built by me (and now I know that's not a very good idea-but very well. To err is the key to better understanding). The dataset is about a retail clothing manufacturer that produces three types of dresses every month and the number of these dresses resolve the total cost of manufacturing for the manufacturer per month. Remember, I haven't used cost/dress but the Quantity-of-dresses as my explanatory variables (one pertaining to each dress type).
+
+But the model, according to me has given the best results nevertheless. I have tried multiple ways to implement the model on excel-using an add-in called the "Data Analysis" (you will find it under the Data section on the options-ribbon after having added it via options on file). This tool was used to evaluate the regression coefficients pertaining to each explanatory variable to get an understanding of the relation. There is something called a 'p-value' which basically asserts a null hypothesis that the coefficient for a variable is 0 (that is no effect). For a p-value ideally less than 0.05, we can reject the null hypothesis (that is the variable IS significant with a non-zero coefficient and needs to be used in the model) and the ones with larger p-values are rejected as the null-hypothesis for them is verified. In real-time however-we have relaxed the threshold to 0.15 rather than 0.05. Once the coefficients are decided-they are plugged into the linear regression equation. And voila-you have your predictions!
+
+The project is divided in three parts. PART 1: This has been done on Excel using the 'Data analysis' tool to evaluate the coefficients. I have implemented two models in this-in the first one, I am using only the most significant variable with the least p-value while in the other, I am using more than one variable (including a non significant ones). The difference between the actual and the predicted values are shown in terms of percentages. And they are highlighted to show the significant differences.
+
+PART 2: This is the same algorithm using the same dataset-except this time we are using R on R Studio. We are calculating the coefficients on R Studio using their built in functions and then finding out the difference between the actual and the predicted values. Herr I have used only the significant predictor variable and it has given a result of 90% correct predictions of the 30 observations.
+
+PART 3: I reimplemented the model in PART 2 on Excel with the values that were evaluated on R-studio it-self. You can get a better sense of the formulae used on excel.
+
+NOTE: Some data-slicing and dicing had been done, pivot charts were built-but only some of these were used. I have marked it all out on excel-of what data we used, what transformations we made to the data etc. You will find the comments on R as well as on excel pretty helpful.
+
+Let me know of your doubts and opinions!
